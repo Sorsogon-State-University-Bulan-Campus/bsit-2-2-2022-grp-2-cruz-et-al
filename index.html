@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
+    <title>Sorsogon State University - Bulan Campus</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <!-- Navigation -->
+    <div class="row justify-content-end">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
+            <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 ms-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="uil uil-list-ul"></i></span>
+                </button>
+                <button id="toggler" class="navbar-toggler navbar-toggler-big" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"><i
+                    class="uil uil-list-ul"></i></button>
+                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-5">
+                        <a class="nav-item nav-link active text-center mx-3" href="#home">Home</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#portfolio">Gallery</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#team">Team</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- First section -->
+    <div id="home" class="frontpage">
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    <div class="left col-12 col-lg-4">
+                        <div class="col-4 d-none d-lg-block">
+                        </div>
+                        <div class="col-12">
+                            <div class="header">
+                                <div class="header-text">
+                                    <h1>
+                                        Los <span class="highlighted">Colores</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-lg-start justify-content-center buttons">
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="main-button btn-view-portfolio text-center" href="#portfolio">Visit
+                                        Gallery</a>
+                                </div>
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="button text-center" href="#contact">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <div class="indicators">
+                                    <span class="indicator-main" onclick="currentSlide(1)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(2)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(3)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(4)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="d-none d-lg-block scroll-item">
+                                    <i class="bi bi-mouse me-2 align-middle"></i><span class="scroll-text">Scroll
+                                        down</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="gallery">
+                            <div class="slide fade">
+                                <img src="img/slides/Colors1.jpg" alt="Colors1">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/Colors3.jpg" alt="Colors3">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/Colors4.jpg" alt="Colors4">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/Colors7.jpg" alt="Colors7">
+                            </div>
+                            <div class="arrows d-none d-lg-block">
+                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <!-- Second secrtion -->
+        <section>
+            <div id="accordion">
+                <div class="expertize container">
+
+                    <div class="cards row justify-content-between">
+                        <div class="col-3">
+                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <i class="uil uil-question-circle"></i>
+                                <p class="subtitles">What is <br> Colors</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingTwo" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="uil uil-books"></i>
+                                <p class="subtitles">History of <br> Colors</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="uil uil-flask"></i>
+                                <p class="subtitles">Science of <br> Colors</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="uil uil-edit-alt"></i>
+                                <p class="subtitles">Naming of <br> Colors</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="collapseOne" class="content row collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>What is <br><span class="highlighted">Colors</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Color is the visual perceptual property deriving from the spectrum of light interacting 
+                                with the photoreceptor cells of the eyes. Color categories and physical specifications 
+                                of color are associated with objects or materials based on their physical properties such 
+                                as light absorption, reflection, or emission spectra. By defining a color space colors can 
+                                be identified numerically by their coordinates.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="content row collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>History of <br><span class="highlighted">Colors</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>The first color wheel was presented by Sir Isaac Newton in the 17th century when he first 
+                                discovered the visible spectrum of light. Around this time, color was thought to be a product 
+                                of the mixing of light and dark, with red being the “most light”, and blue the “most dark”. 
+                                Newton saw that this theory was flawed, and while in isolation as the bubonic plague ravaged 
+                                Europe, began testing the properties of white light and “to try therewith the celebrated Phenomena 
+                                of Colour”. In his classic prism experiment, he noted that white light is composed of a variety of 
+                                colors. He then mapped these colors into an octave schema as the first color wheel and the original 
+                                ROY G BIV. His experimentations also led to the discovery that all secondary colors can be made by 
+                                mixing primary colors. The mixtures of colors in varying ratios resulted in different “hues” of novel 
+                                colors from the classic ROY G BIV baseline, and resulted in the first hue wheel, which is likely the 
+                                color wheel we are most used to seeing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseThree" class="content row collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Science of <br><span class="highlighted">Colors</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>The science of color is sometimes called chromatics, colorimetry, or simply color science. It includes 
+                                the perception of color by the human eye and brain, the origin of color in materials, color theory in 
+                                art, and the physics of electromagnetic radiation in the visible range (that is, what is commonly referred 
+                                to simply as light).</p>
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="content row collapse" aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Naming of<br><span class="highlighted">Colors</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>In the 1969 study Basic Color Terms: Their Universality and Evolution, Brent Berlin and Paul Kay describe 
+                                a pattern in naming "basic" colors (like "red" but not "red-orange" or "dark red" or "blood red", which are 
+                                "shades" of red). All languages that have two "basic" color names distinguish dark/cool colors from bright/warm 
+                                colors. The next colors to be distinguished are usually red and then yellow or green. All languages with six 
+                                "basic" colors include black, white, red, green, blue, and yellow. The pattern holds up to a set of twelve: black, 
+                                gray, white, pink, red, orange, yellow, green, blue, purple, brown, and azure (distinct from blue in Russian and Italian, but not English).</p>
+                        </div>
+                    </div>
+
+                    <div class="cards row justify-content-between">
+                        <div class="col-3">
+                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseFive"
+                                aria-expanded="true" aria-controls="collapseFive">
+                                <i class="uil uil-lightbulb-alt"></i>
+                                <p class="subtitles">Physics of <br> Colors</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingTwo" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <i class="uil uil-palette"></i>
+                                <p class="subtitles">Structural <br> Coloring</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <i class="uil uil-adjust-circle"></i>
+                                <p class="subtitles">Additive <br> Coloring</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseEight" aria-expanded="false" aria-controls="collapseSeven">
+                                <i class="uil uil-adjust-half"></i>
+                                <p class="subtitles">Subtractive <br> Coloring</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="collapseFive" class="content row collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Physics of <br><span class="highlighted">Colors</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Electromagnetic radiation is characterized by its wavelength (or frequency) and its 
+                                intensity. When the wavelength is within the visible spectrum (the range of wavelengths 
+                                humans can perceive, approximately from 390 nm to 700 nm), it is known as "visible light". 
+                                Most light sources emit light at many different wavelengths; a source's spectrum is a distribution 
+                                giving its intensity at each wavelength. Although the spectrum of light arriving at the eye from a 
+                                given direction determines the color sensation in that direction, there are many more possible spectral 
+                                combinations than color sensations. In fact, one may formally define a color as a class of spectra that 
+                                give rise to the same color sensation, although such classes would vary widely among different species, 
+                                and to a lesser extent among individuals within the same species. In each such class the members are called 
+                                metamers of the color in question. This effect can be visualized by comparing the light sources' spectral 
+                                power distributions and the resulting colors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseSix" class="content row collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Structural <br><span class="highlighted">Coloring</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Structural colors are colors caused by interference effects rather than by pigments. Color effects are 
+                                produced when a material is scored with fine parallel lines, formed of one or more parallel thin layers, 
+                                or otherwise composed of microstructures on the scale of the color's wavelength. If the microstructures 
+                                are spaced randomly, light of shorter wavelengths will be scattered preferentially to produce Tyndall 
+                                effect colors: the blue of the sky (Rayleigh scattering, caused by structures much smaller than the 
+                                wavelength of light, in this case air molecules), the luster of opals, and the blue of human irises. 
+                                If the microstructures are aligned in arrays, for example the array of pits in a CD, they behave as a 
+                                diffraction grating: the grating reflects different wavelengths in different directions due to interference 
+                                phenomena, separating mixed "white" light into light of different wavelengths. If the structure is one or more 
+                                thin layers then it will reflect some wavelengths and transmit others, depending on the layers' thickness.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseSeven" class="content row collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Additive <br><span class="highlighted">Coloring</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Additive color is light created by mixing together light of two or more different 
+                                colors. Red, green, and blue are the additive primary colors normally used in 
+                                additive color systems such as projectors and computer terminals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseEight" class="content row collapse" aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Subtractive <br><span class="highlighted">Coloring</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Subtractive coloring uses dyes, inks, pigments, or filters to absorb some wavelengths of 
+                                light and not others. The color that a surface displays comes from the parts of the visible 
+                                spectrum that are not absorbed and therefore remain visible. Without pigments or dye, fabric 
+                                fibers, paint base and paper are usually made of particles that scatter white light (all colors) 
+                                well in all directions. When a pigment or ink is added, wavelengths are absorbed or "subtracted" 
+                                from white light, so light of another color reaches the eye.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Second section -->
+        <section id="portfolio">
+            <!--  id only for scrolling -->
+            <div class="portfolio">
+                <div class="portfolio-header-area">
+                    <div class="container">
+                        <div class="portfolio-header">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4">
+                                    <h2>Gallery</h2>
+                                </div>
+                                <div id="filters" class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio active" data-filter="*">Main Hall</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c1">Colors</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c2">Colors in Nature</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c3">Colors in Arts</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-body">
+                    <div class="container">
+                        <div class="row grid">
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art7.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art6.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature2.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors1.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art1.jpeg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature3.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature9.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art10.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors2.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature6.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature7.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors3.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors4.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art2.jpeg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art13.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors5.png" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors6.jpeg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art3.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art5.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature10.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature11.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art15.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature12.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art16.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors8.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors9.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art18.jpeg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors10.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors11.png" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature13.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature14.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature15.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors13.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature.jpeg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art19.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature16.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature17.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors14.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art20.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors15.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors16.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature18.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art17.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Nature20.jpg" alt="Nature">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Nature</p>
+                                    </div>
+                                </figure>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors18.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors19.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Colors.jpg" alt="Colors">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors</p>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/Art14.jpg" alt="Arts">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <p>Colors in Arts</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <a id="load-more" class="main-button my-5">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Third section -->
+        <section id="team">
+            <div class="team">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-md-6">
+                            <h2>Our <span class="highlighted">Team</span></h2>
+                            <p class="mt-5">A group of young and hard-working 2nd year IT students from Sorsogon State University - Bulan Campus.
+                                Our team engaged and plan to create a simple website in understanding what colors is. The team collaborated with
+                                Firmbee in constructing and designing the whole website layout. Despite the current situation, our team pushes our skills
+                                and competencies to further keep up with the current trends in the technological field and enhance our skills.  <br><br> Our team is willing to team up 
+                                with different IT personels in building a more diverese information and technological advancement in the society.
+                            Learning is a continous process and our group are willing to keep up with it to further exceeds our limitations.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="img/school-logo.jpg" alt="Team Work">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Fourth section -->
+        <section id="contact">
+            <div class="contact">
+                <hr class="m-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="contact-form col-12 col-sm-6 col-md-7">
+                            <h2>Contact</h2>
+                            <form action="mailto:example@example.com" method="post" class="needs-validation" novalidate>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Full Name</label>
+                                    <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a full name.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Email</label>
+                                    <input class="col-12" type="email" id="email" placeholder="E-mail" name="email"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a correct email.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Message</label>
+                                    <input class="col-12" type="text" id="message" placeholder="Message" name="message"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a message.</div>
+                                </div>
+                                <div class="form-group row justify-content-end">
+                                    <div class="col-12 col-lg-5 mb-5 justify-content-start justify-content-sm-end">
+                                        <button type="submit" name="submit" class="main-button">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="media row my-5">
+                                <div class="col-12 col-lg-4">
+                                    <p>Our Social media</p>
+                                    <p class="warning">
+                                        <a href="https://www.instagram.com/ceejhaeyyy" target="_blank">
+                                            <i class="uil uil-instagram-alt"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/kylamae.marbella.9" target="_blank">
+                                            <i class="uil uil-facebook"></i>
+                                        </a>
+                                        <a href="https://twitter.com/Aylinosumm" target="_blank">
+                                            <i class="uil uil-twitter"></i>
+                                        </a>
+                                        <a href="https://github.com/Carl-John" target="_blank">
+                                            <i class="uil uil-github"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>Contact me via Email</p>
+                                    <a href="mailto:example@example.com" class="warning">chriscarl624@gmail.com</a>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>My phone</p>
+                                    <a href="tel:+00-000-00-00" class="warning">+63906352643</a>
+                                </div>
+                            </div>
+                            <div class="footer d-none d-md-block">
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-3">
+                                        <img src="img/icons/firmbee.svg" alt="firmbee">
+                                    </div>
+                                    <div class="col-9">
+                                        <span>© 2022-23 Firmbee. Design with by <a
+                                                href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                                title="Firmbee - Online Remote working app for collaboration & task management"
+                                                target="_blank">Firmbee</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="up" onclick="topFunction()" id="top" title="Go to top">
+                                <i class="uil uil-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="map">
+                        <iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" 
+                        marginwidth="0"
+                         src="https://www.openstreetmap.org/export/embed.html?bbox=123.87808084487916%2C12.666016983301517%2C123.8837242126465%2C12.668801388884937&amp;layer=mapnik&amp;marker=12.6674091898949%2C123.88090252876282"></iframe>
+                    </div>
+                </div>
+                <div class="footer d-md-none">
+                    <div class="container">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-3">
+                                <img src="img/icons/firmbee.svg" alt="firmbee">
+                            </div>
+                            <div class="col-9">
+                                <span>© 2022-23 Firmbee. Design with by <a
+                                        href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                        title="Firmbee - Online Remote working app for collaboration & task management"
+                                        target="_blank">Firmbee</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/gallery.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/scrolls.js"></script>
+    <script src="js/validation.js"></script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+
+</body>
+
+</html>
