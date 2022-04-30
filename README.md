@@ -1,9 +1,7 @@
-
 # Colors 🌈
-
 Color is the visual perceptual property deriving from the spectrum of light interacting with the photoreceptor cells of the eyes. Color categories and physical specifications of color are associated with objects or materials based on their physical properties such as light absorption, reflection, or emission spectra. By defining a color space colors can be identified numerically by their coordinates.
-## Authors 👩🏼‍💻 👨🏼‍💻
 
+## Authors 👩🏼‍💻 👨🏼‍💻
 Hi I'm Carl John E. Cruz👱🏼 and here are some random facts about me!
 - Im 20yrs. old
 - I was born on September 23, 2001🎂
@@ -42,17 +40,20 @@ Hi I'm Kyla Mae F. Marbella👩🏽 and here are some random facts about me!
 
 
 ## Features💡
-
 - A portfolio website aims to bring the colors of the world.
 - Design to create interaction between the viewer and the website.
 - A mini library of colors intended to bring fun and amazement.
 
 
 ## Acknowledgements📚
-
  - [Firmbee Website Templates](https://firmbee.com/blue-business-website-template)
  - [Wikipedia](https://en.wikipedia.org/wiki/Color)
  - [Readme.so](https://readme.so)
  - [Images](https://www.google.com/search?q=colors&oq=colors&aqs=chrome..69i57l2j35i39i362l4j69i60j69i61.739j0j7&sourceid=chrome&ie=UTF-8)
  - [Emojis](https://getemoji.com/)
 
+
+## Contributors🗃📈
+- Aileen M. Dejucos - Images & Website Content👩🏼‍🏫📸
+- Kyla Mae F. Marbella - Readme & Website Content👩🏼‍🏫📑
+- Carl John E. Cruz - Editing & Finalizing the Website Template👨🏼‍🔧⚒ 
